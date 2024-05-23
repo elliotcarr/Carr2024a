@@ -20,7 +20,7 @@ Case = 'A'; system_type = 'monolithic'; coating_type = 'fully-permeable';
 % Case = 'C'; system_type ='core-shell'; coating_type = 'fully-permeable';
 % Case = 'D'; system_type = 'core-shel'; coating_type = 'semi-permeable';
 
-R = 1e-4;
+R = 1e-4; % device radius
 if isequal(system_type,'monolithic')
     D = 1e-12; % diffusivity
     k = 5e-5; % reaction rate
