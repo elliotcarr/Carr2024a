@@ -21,6 +21,6 @@ elseif isequal(coating_type,'semi-permeable')
         Finf = Psh / (Rch*lambdas*((Psh*besselk(0,lambdas)-lambdas*besselk(1,lambdas))*besseli(1,Rch*lambdas) ...
             + (Psh*besseli(0,lambdas) + lambdas*besseli(1,lambdas))*besselk(1,Rch*lambdas)));
     elseif d == 3 % sphere
-        Finf = Psh*lambdas / ((Psh-1+Rch*lambdas^2)*sinh(lambdas*Rsh) + lambdas*(1-Rch+Psh*Rch)*cosh(lambdas*Rsh));
+        Finf = Psh*lambdas / ((Psh-1+Rch*lambdas^2)*sinh(lambdas*Rsh) + lambdas*(Rsh+Psh*Rch)*cosh(lambdas*Rsh));
     end
 end
